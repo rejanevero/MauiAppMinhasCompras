@@ -1,7 +1,12 @@
 <div align="center">
 <img align="left" height="40" src="https://www.svgrepo.com/show/477093/mobile-phone-signal.svg"/><h1>Desenvolvimento de Sistemas III - ETEC</h1>
-<img align="right" height="100" src="https://www.svgrepo.com/show/477108/computer.svg" />
-
+<br>
+  <img align="right" height="100" src="https://www.svgrepo.com/show/477108/computer.svg" />
+<br>
+  <br>
+  <br>
+  <br>
+  <hr>
 <h2>Agenda 01 - UTILIZANDO MICROSOFTMAUI PARA DESENVOLVIMENTO MOBILE.</h2>
 
 <hr>
