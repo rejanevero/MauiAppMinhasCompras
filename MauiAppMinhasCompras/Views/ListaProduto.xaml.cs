@@ -51,4 +51,9 @@ public partial class ListaProduto : ContentPage
 
         DisplayAlert("Total dos Produtos", msg, "OK");
     }
+
+    private void MenuItem_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }
