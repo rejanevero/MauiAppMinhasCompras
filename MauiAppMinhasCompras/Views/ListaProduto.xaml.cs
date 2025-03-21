@@ -1,5 +1,7 @@
 using MauiAppMinhasCompras.Models;
+
 using System.Collections.ObjectModel;
+
 
 namespace MauiAppMinhasCompras.Views;
 
@@ -17,7 +19,9 @@ public partial class ListaProduto : ContentPage
     {
         try 
         {
-                List<Produto> tmp = await App.Db.GetAll();
+            lista.Clear();
+            
+            List<Produto> tmp = await App.Db.GetAll();
 
                 tmp.ForEach(i => lista.Add(i));
     }
@@ -87,4 +91,22 @@ public partial class ListaProduto : ContentPage
             await DisplayAlert("Ops", ex.Message, "OK");
         }
     }
-}
+
+    private void lst_produtos_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+    {
+        try 
+        { 
+            Produto p = e.SelectedItem as Produto;
+
+            Navigation.PushAsync(new Views.EditarProduto
+                {
+                BindingContext = p
+            });
+        }
+
+        catch (Exception ex)
+        {
+             DisplayAlert("Ops", ex.Message, "OK");
+        }
+    }
+    }
